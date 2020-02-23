@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>My First Google Map</h1>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBndCmodo3N-JFr3JJAjuX2xXNYhYUCTXI&callback=myMap"></script>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12580.79072777601!2d23.754237033455553!3d37.972515725580806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x14a197eeb7af25b3%3A0x30bfd274bd628e41!2zzqDOsc69zrXPgM65z4PPhM63zrzOuc6_z43PgM6_zrvOtywgzpbPic6zz4HOrM-Gzr_PhQ!3m2!1d37.968131799999995!2d23.7798041!4m5!1s0x14a1bd4f9d5b96b7%3A0xff6807a843b1161a!2zzpXPhc6xzrPOs861zrvOuc-DzrzPjM-CLCDOkc64zq7Ovc6x!3m2!1d37.9796507!2d23.7483976!5e0!3m2!1sel!2sgr!4v1578999167553!5m2!1sel!2sgr"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</body>
+
+</html>
